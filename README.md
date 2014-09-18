@@ -24,4 +24,10 @@ Stuff to remember about table view:
 
 We will often need to use scrollview to scroll the content up to avoid having the keyboard cover the content when it pops up. This requires some calculation to scroll just the right amount. These projects are to allow experimentation with how scrolling is best done. E.g. should we use `setContentOffset` or `scrollRectToVisible`.
 
+When using scrollview keep in mind:
+
+1. A scrollview has a frame which is specifies the dimensions of the area you can always see. However the content area will usually be much larger.
+2. Specify the frame dimensions in interface builder.
+3. Specify content size in code under `viewDidLayoutSubviews`. A trick is to size the scroll view to show everything and make note of that size. Specify this size as `contentSize`. 
+
 [miketableview]: https://www.mikeash.com/pyblog/friday-qa-2013-02-22-lets-build-uitableview.html

@@ -22,14 +22,27 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidLayoutSubviews {
+    // IMPORTANT: Must set this one. This determines the size of the area that the scrollview
+    // is just showing a subset of. So when scrolling we decide which part of the area we are showing.
+    // The larger the frame property of the scrollview is the more of the content we see.
+    // setContentOffset will work without specifying this but scrollRectToVisible won't
+    self.scrollView.contentSize = CGSizeMake(320, 327);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)scrollMe:(id)sender {
-//    [_scrollView scrollRectToVisible:self.switchButton.frame animated:YES];
+- (IBAction)scrollWithOffset:(id)sender {
     [_scrollView setContentOffset:CGPointMake(0, 50) animated:YES];
+}
+
+- (IBAction)scrollToRect:(id)sender {
+    //    [_scrollView scrollRectToVisible:self.switchButton.frame animated:YES];
+
+    [_scrollView scrollRectToVisible:self.switchButton.frame animated:YES];
 
 }
 
