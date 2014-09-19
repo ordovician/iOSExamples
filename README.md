@@ -30,4 +30,8 @@ When using scrollview keep in mind:
 2. Specify the frame dimensions in interface builder.
 3. Specify content size in code under `viewDidLayoutSubviews`. A trick is to size the scroll view to show everything and make note of that size. Specify this size as `contentSize`. 
 
+### Scrolling to active textfield automatically
+
+Cocoa is actually cleverer than you think. If you make sure the `contentSize` covers the area under the keyboard while the `frame` of the scrollview is just the area above the keyboard then the scrollview will automatically scroll to show active textfield.
+
 [miketableview]: https://www.mikeash.com/pyblog/friday-qa-2013-02-22-lets-build-uitableview.html
