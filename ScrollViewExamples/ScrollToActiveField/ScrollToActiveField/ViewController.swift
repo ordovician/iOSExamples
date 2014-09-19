@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var firstField: UITextField!
+    @IBOutlet var topField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.contentSize = view.frame.size
         registerKeyboardNotifications()
     }
 
@@ -29,7 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func registerKeyboardNotifications() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWasShown:", name: UIKeyboardDidShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWasShown:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillBeHidden:", name: UIKeyboardWillHideNotification, object: nil)
     }
     
@@ -38,12 +39,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if let keyboardFrame: NSValue = info?[UIKeyboardFrameBeginUserInfoKey] as? NSValue {
             let keyboardSize = keyboardFrame.CGRectValue().size
             
-
-            scrollView.contentSize = view.frame.size
+            
             var frame = scrollView.frame
             frame.size.height -= keyboardSize.height
             scrollView.frame = frame
-            scrollView.scrollRectToVisible(firstField.frame, animated: true)
         }
     }
     
