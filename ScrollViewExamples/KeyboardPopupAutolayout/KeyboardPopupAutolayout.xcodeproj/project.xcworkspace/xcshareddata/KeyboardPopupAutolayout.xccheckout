@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F71870A4-C175-4CAF-92EF-AAE202DADA4B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KeyboardPopupAutolayout</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BF954897264757383E4D788134C7A6B1029BB98A</key>
+		<string>github.com:ordovician/iOSExamples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScrollViewExamples/KeyboardPopupAutolayout/KeyboardPopupAutolayout.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BF954897264757383E4D788134C7A6B1029BB98A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:ordovician/iOSExamples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF954897264757383E4D788134C7A6B1029BB98A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF954897264757383E4D788134C7A6B1029BB98A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSExamples</string>
+		</dict>
+	</array>
+</dict>
+</plist>
