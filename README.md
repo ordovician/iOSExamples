@@ -34,4 +34,18 @@ When using scrollview keep in mind:
 
 Cocoa is actually cleverer than you think. If you make sure the `contentSize` covers the area under the keyboard while the `frame` of the scrollview is just the area above the keyboard then the scrollview will automatically scroll to show active textfield.
 
+### Alternative using Autolayout
+
+Scroll view can be tricky to deal with when you have to handle landscape and portrait mode as well as different screen sizes. So an alternative way to do this is to use Autolayout instead. A way to do this is demonstrated in *KeyboardPopupAutolayout*.
+
+The basic idea is that you create an `IBOutlet` to a constraint that decides how far down all your UI is placed. Then when the keyboard pops up you update this constraint to push the whole UI up. E.g.: 
+
+	let info = notification.userInfo
+    if let keyboardFrame: NSValue = info?[UIKeyboardFrameBeginUserInfoKey] as? NSValue {
+        let keyboardSize = keyboardFrame.CGRectValue().size
+        
+        bottomConstraint.constant = keyboardSize.height + uriField.frame.height
+        view.layoutIfNeeded()
+    }
+
 [miketableview]: https://www.mikeash.com/pyblog/friday-qa-2013-02-22-lets-build-uitableview.html
