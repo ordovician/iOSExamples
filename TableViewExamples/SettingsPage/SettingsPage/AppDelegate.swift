@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let first = FirstPage(nibName: "FirstPage", bundle: nil)
         let nav = UINavigationController(rootViewController: first)
+        nav.navigationBar.barTintColor = UIColor.orangeColor()
+        nav.navigationBar.tintColor = UIColor.whiteColor()
+        nav.navigationBar.barStyle = UIBarStyle.Black
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         return true

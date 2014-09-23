@@ -14,6 +14,7 @@
 		D59B5C5A19D1C808000B201C /* FirstPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D59B5C5919D1C808000B201C /* FirstPage.xib */; };
 		D59B5C5C19D1C864000B201C /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B5C5B19D1C864000B201C /* FirstPage.swift */; };
 		D59B5C5E19D1C9DB000B201C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59B5C5D19D1C9DB000B201C /* Settings.storyboard */; };
+		D59B5C6019D1CC4E000B201C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B5C5F19D1CC4E000B201C /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D59B5C5919D1C808000B201C /* FirstPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPage.xib; sourceTree = "<group>"; };
 		D59B5C5B19D1C864000B201C /* FirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
 		D59B5C5D19D1C9DB000B201C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		D59B5C5F19D1CC4E000B201C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				D59B5C5719D1C7A0000B201C /* Launch.xib */,
 				D59B5C5919D1C808000B201C /* FirstPage.xib */,
 				D59B5C5D19D1C9DB000B201C /* Settings.storyboard */,
+				D59B5C5F19D1CC4E000B201C /* Settings.swift */,
 				D59B5C5B19D1C864000B201C /* FirstPage.swift */,
 				D59B5C3E19D1C6C8000B201C /* Images.xcassets */,
 				D59B5C3519D1C6C8000B201C /* Supporting Files */,
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59B5C6019D1CC4E000B201C /* Settings.swift in Sources */,
 				D59B5C3819D1C6C8000B201C /* AppDelegate.swift in Sources */,
 				D59B5C5C19D1C864000B201C /* FirstPage.swift in Sources */,
 			);

@@ -20,6 +20,13 @@ Stuff to remember about table view:
 
 3. Not only does the sections have *headers* and *footers*, but the whole tableview itself does as well: `tableHeaderView` and `tableFooterView`. Both `UIView` properties.
 
+### Implementing Settings style tableview
+
+The settings app typically has lots of rows with labels and text fields. The *SettingsPage* project demonstrates how you can make this work using a *Storyboard*. It shows how you can edit a textfield by tapping anywhere in tableview cell.
+
+It also shows how to load a particular storyboard because I think using just one storyboard is extremely inflexible and often just requires more coding.  
+
+
 ## ScrollView
 
 We will often need to use scrollview to scroll the content up to avoid having the keyboard cover the content when it pops up. This requires some calculation to scroll just the right amount. These projects are to allow experimentation with how scrolling is best done. E.g. should we use `setContentOffset` or `scrollRectToVisible`.
