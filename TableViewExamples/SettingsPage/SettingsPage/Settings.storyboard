@@ -158,6 +158,34 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikP-Nf-mVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vev-Ze-QrG" userLabel="Password">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vev-Ze-QrG" id="CYU-Gv-3HM">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR1-Jy-nAe">
+                                <rect key="frame" x="15" y="12" width="72" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mysecret" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4L-UZ-VVf">
+                                <rect key="frame" x="95" y="12" width="490" height="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="yR1-Jy-nAe" secondAttribute="centerY" id="Boj-CY-8tD"/>
+                            <constraint firstAttribute="trailing" secondItem="E4L-UZ-VVf" secondAttribute="trailing" constant="15" id="KdX-GN-96l"/>
+                            <constraint firstItem="yR1-Jy-nAe" firstAttribute="leading" secondItem="CYU-Gv-3HM" secondAttribute="leadingMargin" constant="7" id="O4F-j5-cwx"/>
+                            <constraint firstAttribute="centerY" secondItem="E4L-UZ-VVf" secondAttribute="centerY" id="ce0-fI-cKs"/>
+                            <constraint firstItem="E4L-UZ-VVf" firstAttribute="leading" secondItem="yR1-Jy-nAe" secondAttribute="trailing" constant="8" symbolic="YES" id="eod-aV-PYZ"/>
+                        </constraints>
+                    </tableViewCellContentView>
+                </tableViewCell>
             </objects>
             <point key="canvasLocation" x="407" y="392"/>
         </scene>
