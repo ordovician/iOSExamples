@@ -129,22 +129,38 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jXb-xm-cx6" id="IOg-zR-moS">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTTPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khJ-os-tYH">
-                                                    <rect key="frame" x="15" y="12" width="52" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N45-bL-caA">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-mf-RvI">
                                                     <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="Fxp-pT-J4D"/>
+                                                        <constraint firstAttribute="height" constant="31" id="T7e-rX-TQ1"/>
+                                                        <constraint firstAttribute="width" constant="49" id="xLT-F2-SnS"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="T7e-rX-TQ1"/>
+                                                        </mask>
+                                                    </variation>
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="khJ-os-tYH" firstAttribute="leading" secondItem="IOg-zR-moS" secondAttribute="leadingMargin" constant="7" id="6WG-xX-YSn"/>
-                                                <constraint firstAttribute="centerY" secondItem="N45-bL-caA" secondAttribute="centerY" id="K5f-WM-qZ1"/>
-                                                <constraint firstAttribute="centerY" secondItem="khJ-os-tYH" secondAttribute="centerY" id="SRq-EY-4Z0"/>
-                                                <constraint firstItem="N45-bL-caA" firstAttribute="trailing" secondItem="IOg-zR-moS" secondAttribute="trailingMargin" id="kir-Zu-wFW"/>
+                                                <constraint firstItem="Vx8-mf-RvI" firstAttribute="top" secondItem="IOg-zR-moS" secondAttribute="topMargin" constant="-2" id="9gz-NY-qZL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Vx8-mf-RvI" secondAttribute="bottom" constant="-2" id="Cv9-5C-tgA"/>
+                                                <constraint firstItem="Vx8-mf-RvI" firstAttribute="trailing" secondItem="IOg-zR-moS" secondAttribute="trailingMargin" id="DLc-tp-cVu"/>
+                                                <constraint firstAttribute="centerY" secondItem="Vx8-mf-RvI" secondAttribute="centerY" id="DTf-gy-tgA"/>
+                                                <constraint firstItem="Vx8-mf-RvI" firstAttribute="trailing" secondItem="IOg-zR-moS" secondAttribute="trailingMargin" id="cBD-IO-vQo"/>
+                                                <constraint firstAttribute="centerY" secondItem="Vx8-mf-RvI" secondAttribute="centerY" id="ljO-MC-uny"/>
+                                                <constraint firstItem="Vx8-mf-RvI" firstAttribute="trailing" secondItem="IOg-zR-moS" secondAttribute="trailingMargin" id="qIr-9g-mpf"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9gz-NY-qZL"/>
+                                                    <exclude reference="Cv9-5C-tgA"/>
+                                                    <exclude reference="DLc-tp-cVu"/>
+                                                    <exclude reference="cBD-IO-vQo"/>
+                                                    <exclude reference="ljO-MC-uny"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
