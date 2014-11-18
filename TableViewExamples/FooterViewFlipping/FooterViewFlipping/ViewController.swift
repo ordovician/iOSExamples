@@ -8,18 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+//extension CGSize {
+//    func +(left: Self, right: Self) -> Self {
+//    
+//    }
+//}
+
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let nib = UINib(nibName: "Footer", bundle: nil)
+        let views = nib.instantiateWithOwner(nil, options: nil) as [UIView]
+        let footer = views[0]
+        self.tableView.tableFooterView = footer
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+//    override func viewWillLayoutSubviews() {
+//        if let tableView = self.tableView {
+//            println("TableView Size: \(tableView.frame.size)")
+//            let tableSize = tableView.frame.size
+//            
+//            if let footer = self.tableView.tableFooterView {
+//                println("Footer Size: \(footer.frame.size)")
+//                let offset = footer.frame.size.height
+//                let minContentHeight = tableSize.height - offset
+//                
+//                tableView.contentSize = footer.frame.size
+//            }
+//        }
+//    }
 
 }
 

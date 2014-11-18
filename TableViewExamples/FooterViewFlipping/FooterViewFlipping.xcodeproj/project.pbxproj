@@ -13,6 +13,7 @@
 		D5EC0BEC1A1A06B30067074B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5EC0BEB1A1A06B30067074B /* Images.xcassets */; };
 		D5EC0BEF1A1A06B30067074B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EC0BED1A1A06B30067074B /* LaunchScreen.xib */; };
 		D5EC0BFB1A1A06B30067074B /* FooterViewFlippingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC0BFA1A1A06B30067074B /* FooterViewFlippingTests.swift */; };
+		D5EC0C031A1A243C0067074B /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EC0C021A1A243C0067074B /* Footer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D5EC0BF41A1A06B30067074B /* FooterViewFlippingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooterViewFlippingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5EC0BF91A1A06B30067074B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5EC0BFA1A1A06B30067074B /* FooterViewFlippingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewFlippingTests.swift; sourceTree = "<group>"; };
+		D5EC0C021A1A243C0067074B /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D5EC0BE41A1A06B30067074B /* AppDelegate.swift */,
+				D5EC0C021A1A243C0067074B /* Footer.xib */,
 				D5EC0BE61A1A06B30067074B /* ViewController.swift */,
 				D5EC0BE81A1A06B30067074B /* Main.storyboard */,
 				D5EC0BEB1A1A06B30067074B /* Images.xcassets */,
@@ -193,6 +196,7 @@
 			files = (
 				D5EC0BEA1A1A06B30067074B /* Main.storyboard in Resources */,
 				D5EC0BEF1A1A06B30067074B /* LaunchScreen.xib in Resources */,
+				D5EC0C031A1A243C0067074B /* Footer.xib in Resources */,
 				D5EC0BEC1A1A06B30067074B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
