@@ -21,6 +21,8 @@ import UIKit
 class Settings : UITableViewController {
     override func viewDidLoad() {
         navigationItem.title = "Settings"
+//        let height = self.tableView.rowHeight
+//        self.tableView.rowHeight = height
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
