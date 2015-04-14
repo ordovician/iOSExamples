@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                   Example Objective-C framework
                    DESC
 
-  s.homepage     = "www.pexip.com"
+  s.homepage     = "http://www.pexip.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "MIT (example)"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "MIT", :file => "CocoapodExamples/OCCalculator/LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "git@github.com:ordovician/iOSExamples.git", :tag => "occalc-0.0.1" }
+  s.source       = { :git => "https://github.com/ordovician/iOSExamples.git", :tag => "occalc-0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
