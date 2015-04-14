@@ -7,21 +7,43 @@
 //
 
 #import "ViewController.h"
+@import Pods;
+
+//#import <OCCalculator/OCCalculator.h>
+//@import OCCalculator;
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *leftOperand;
+@property (weak, nonatomic) IBOutlet UITextField *rightOperand;
+@property (weak, nonatomic) IBOutlet UITextField *result;
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    OCCalculator *calculator_;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    calculator_ = [[OCCalculator alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)addNumbers:(id)sender {
+    calculator_.leftOperand = [self.leftOperand.text intValue];
+    calculator_.rightOperand = [self.rightOperand.text intValue];
+    
+    self.result.text = [@([calculator_ addOperands]) stringValue];
+}
+- (IBAction)substractNumbers:(id)sender {
+    calculator_.leftOperand = [self.leftOperand.text intValue];
+    calculator_.rightOperand = [self.rightOperand.text intValue];
+    
+    self.result.text = [@([calculator_ substractOperands]) stringValue];
 }
 
 @end

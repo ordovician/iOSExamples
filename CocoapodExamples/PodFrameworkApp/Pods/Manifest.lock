@@ -1,0 +1,14 @@
+PODS:
+  - OCCalculator (0.0.1)
+
+DEPENDENCIES:
+  - OCCalculator (from `../OCCalculator`)
+
+EXTERNAL SOURCES:
+  OCCalculator:
+    :path: "../OCCalculator"
+
+SPEC CHECKSUMS:
+  OCCalculator: fa91f674679627189c6915a1bd42910eac98e478
+
+COCOAPODS: 0.36.3

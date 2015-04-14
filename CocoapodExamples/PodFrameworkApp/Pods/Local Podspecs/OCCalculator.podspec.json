@@ -1,0 +1,25 @@
+{
+  "name": "OCCalculator",
+  "version": "0.0.1",
+  "summary": "Example of Objc Frameworkd.",
+  "description": "                  Example Objective-C framework\n",
+  "homepage": "http://www.pexip.com",
+  "license": {
+    "type": "MIT",
+    "file": "CocoapodExamples/OCCalculator/LICENSE"
+  },
+  "authors": {
+    "Erik Engheim": "erik.engheim@mac.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/ordovician/iOSExamples.git",
+    "tag": "occalc-0.0.1"
+  },
+  "source_files": [
+    "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.h",
+    "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.m"
+  ]
+}
