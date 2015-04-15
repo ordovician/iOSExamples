@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D55FA04A1ADE8B130040BD66 /* DooBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FA0491ADE8B130040BD66 /* DooBar.swift */; };
 		D5C0839C1ADD5885006E7EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0839B1ADD5885006E7EA0 /* main.m */; };
 		D5C0839F1ADD5885006E7EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0839E1ADD5885006E7EA0 /* AppDelegate.m */; };
 		D5C083A21ADD5885006E7EA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C083A11ADD5885006E7EA0 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D55FA0481ADE8B130040BD66 /* OCCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		D55FA0491ADE8B130040BD66 /* DooBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DooBar.swift; sourceTree = "<group>"; };
 		D5C083961ADD5885006E7EA0 /* OCCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C0839A1ADD5885006E7EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C0839B1ADD5885006E7EA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 			children = (
 				D5C083C11ADD58EA006E7EA0 /* OCCalculator.h */,
 				D5C083BF1ADD58CC006E7EA0 /* OCCalculator.m */,
+				D55FA0491ADE8B130040BD66 /* DooBar.swift */,
 				D5C0839D1ADD5885006E7EA0 /* AppDelegate.h */,
 				D5C0839E1ADD5885006E7EA0 /* AppDelegate.m */,
 				D5C083A01ADD5885006E7EA0 /* ViewController.h */,
@@ -94,6 +98,7 @@
 				D5C083A61ADD5885006E7EA0 /* Images.xcassets */,
 				D5C083A81ADD5885006E7EA0 /* LaunchScreen.xib */,
 				D5C083991ADD5885006E7EA0 /* Supporting Files */,
+				D55FA0481ADE8B130040BD66 /* OCCalculator-Bridging-Header.h */,
 			);
 			path = OCCalculator;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				D5C083C01ADD58CC006E7EA0 /* OCCalculator.m in Sources */,
 				D5C0839F1ADD5885006E7EA0 /* AppDelegate.m in Sources */,
 				D5C0839C1ADD5885006E7EA0 /* main.m in Sources */,
+				D55FA04A1ADE8B130040BD66 /* DooBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,9 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OCCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCalculator/OCCalculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -363,9 +372,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OCCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCCalculator/OCCalculator-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -422,6 +433,7 @@
 				D5C083BB1ADD5885006E7EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5C083BC1ADD5885006E7EA0 /* Build configuration list for PBXNativeTarget "OCCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +442,7 @@
 				D5C083BE1ADD5885006E7EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

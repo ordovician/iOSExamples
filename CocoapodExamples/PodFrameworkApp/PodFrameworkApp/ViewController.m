@@ -31,6 +31,8 @@
         return [max compare:obj];
     }];
     calculator_ = [[OCCalculator alloc] init];
+    DooBar *barbo = [[DooBar alloc] initWithFoo:@"alfonso" bar:@"bonso"];
+    [barbo concat];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,6 +1,6 @@
 {
   "name": "OCCalculator",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "Example of Objc Frameworkd.",
   "description": "                  Example Objective-C framework\n",
   "homepage": "http://www.pexip.com",
@@ -19,7 +19,8 @@
   },
   "source_files": [
     "OCCalculator/OCCalculator.h",
-    "OCCalculator/OCCalculator.m"
+    "OCCalculator/OCCalculator.m",
+    "OCCalculator/*.swift"
   ],
   "public_header_files": "OCCalculator/OCCalculator.h",
   "requires_arc": true
