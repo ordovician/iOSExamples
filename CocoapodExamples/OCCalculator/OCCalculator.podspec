@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.h", "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.m"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
