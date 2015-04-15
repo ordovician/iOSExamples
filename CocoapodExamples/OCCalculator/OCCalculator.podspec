@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "MIT (example)"
-  s.license      = { :type => "MIT", :file => "CocoapodExamples/OCCalculator/LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ordovician/iOSExamples.git", :tag => "occalc-0.0.1" }
+  s.source       = { :path => "."}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -84,9 +84,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.h", "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.m"
+  s.source_files  = "OCCalculator/OCCalculator.h", "OCCalculator/OCCalculator.m"
 
-  s.public_header_files = "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.h"
+  s.public_header_files = "OCCalculator/OCCalculator.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

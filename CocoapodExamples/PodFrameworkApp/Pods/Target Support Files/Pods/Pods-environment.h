@@ -6,6 +6,12 @@
 // project.
 
 
+// Funcussion
+#define COCOAPODS_POD_AVAILABLE_Funcussion
+#define COCOAPODS_VERSION_MAJOR_Funcussion 0
+#define COCOAPODS_VERSION_MINOR_Funcussion 1
+#define COCOAPODS_VERSION_PATCH_Funcussion 1
+
 // OCCalculator
 #define COCOAPODS_POD_AVAILABLE_OCCalculator
 #define COCOAPODS_VERSION_MAJOR_OCCalculator 0

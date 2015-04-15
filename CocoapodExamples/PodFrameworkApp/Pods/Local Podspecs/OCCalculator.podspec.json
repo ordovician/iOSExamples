@@ -6,7 +6,7 @@
   "homepage": "http://www.pexip.com",
   "license": {
     "type": "MIT",
-    "file": "CocoapodExamples/OCCalculator/LICENSE"
+    "file": "LICENSE"
   },
   "authors": {
     "Erik Engheim": "erik.engheim@mac.com"
@@ -15,11 +15,12 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/ordovician/iOSExamples.git",
-    "tag": "occalc-0.0.1"
+    "path": "."
   },
   "source_files": [
-    "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.h",
-    "CocoapodExamples/OCCalculator/OCCalculator/OCCalculator.m"
-  ]
+    "OCCalculator/OCCalculator.h",
+    "OCCalculator/OCCalculator.m"
+  ],
+  "public_header_files": "OCCalculator/OCCalculator.h",
+  "requires_arc": true
 }

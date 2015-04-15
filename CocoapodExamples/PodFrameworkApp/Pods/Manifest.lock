@@ -1,7 +1,9 @@
 PODS:
+  - Funcussion (0.1.1)
   - OCCalculator (0.0.1)
 
 DEPENDENCIES:
+  - Funcussion (~> 0.1.1)
   - OCCalculator (from `../OCCalculator`)
 
 EXTERNAL SOURCES:
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../OCCalculator"
 
 SPEC CHECKSUMS:
-  OCCalculator: fa91f674679627189c6915a1bd42910eac98e478
+  Funcussion: 76d4065e09324d81d8db5b7e23d4639dfeec4399
+  OCCalculator: 2b8c738e4167b5ff3b1aae524abda2be77c4595a
 
 COCOAPODS: 0.36.3

@@ -7,4 +7,5 @@
 platform :ios, '8.0'
 use_frameworks!
 pod 'OCCalculator', :path => '../OCCalculator'
-
+pod 'Funcussion', '~> 0.1.1'
+# pod 'Funcussion', :path => '../funcussion'

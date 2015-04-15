@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-@import Pods;
+@import Funcussion;
+@import OCCalculator;
 
 //#import <OCCalculator/OCCalculator.h>
 //@import OCCalculator;
@@ -25,6 +26,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSArray *numericArray = @[@42,@20,@22];
+    [numericArray max:^NSComparisonResult(id max, id obj) {
+        return [max compare:obj];
+    }];
     calculator_ = [[OCCalculator alloc] init];
 }
 
