@@ -1,0 +1,6 @@
+framework module Funcussion {
+  umbrella header "Pods-PodFrameworkApp-Funcussion-umbrella.h"
+
+  export *
+  module * { export * }
+}

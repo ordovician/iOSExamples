@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PodFrameworkApp-Swift.h"
+
 @import Funcussion;
 @import OCCalculator;
 
@@ -33,6 +35,7 @@
     calculator_ = [[OCCalculator alloc] init];
     DooBar *barbo = [[DooBar alloc] initWithFoo:@"alfonso" bar:@"bonso"];
     [barbo concat];
+    [Bronto doStuff];
 }
 
 - (void)didReceiveMemoryWarning {
