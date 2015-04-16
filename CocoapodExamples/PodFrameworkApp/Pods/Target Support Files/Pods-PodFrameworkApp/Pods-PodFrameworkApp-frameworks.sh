@@ -50,8 +50,10 @@ code_sign() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Funcussion.framework'
   install_framework 'OCCalculator.framework'
+  install_framework 'PexKit.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Funcussion.framework'
   install_framework 'OCCalculator.framework'
+  install_framework 'PexKit.framework'
 fi

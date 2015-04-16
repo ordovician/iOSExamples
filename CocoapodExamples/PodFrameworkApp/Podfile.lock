@@ -1,17 +1,22 @@
 PODS:
   - Funcussion (0.1.1)
   - OCCalculator (0.0.3)
+  - PexKit (1.0.5)
 
 DEPENDENCIES:
   - Funcussion (~> 0.1.1)
   - OCCalculator (from `../OCCalculator`)
+  - PexKit (from `../../../swift-rest-api`)
 
 EXTERNAL SOURCES:
   OCCalculator:
     :path: "../OCCalculator"
+  PexKit:
+    :path: "../../../swift-rest-api"
 
 SPEC CHECKSUMS:
   Funcussion: 76d4065e09324d81d8db5b7e23d4639dfeec4399
   OCCalculator: ea881bddbdcf7503ba2f2d0f261d5aeb18439b7e
+  PexKit: 4f8d30cfc2fe2e77bbaf951a333337c3ef9042f4
 
 COCOAPODS: 0.36.3

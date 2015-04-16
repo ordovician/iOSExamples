@@ -4,7 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 pod 'Funcussion', '~> 0.1.1'
 pod 'OCCalculator', :path => '../OCCalculator'
-
+pod 'PexKit', :path => '../../../swift-rest-api'
 target 'PodFrameworkApp' do
 end
 
