@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Zoomer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDL-u9-yzq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="418"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZG7-Bk-dL2">
+                                        <rect key="frame" x="8" y="8" width="51" height="31"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hR2-AZ-V46">
+                                        <rect key="frame" x="263" y="8" width="51" height="31"/>
+                                    </switch>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PYk-01-yvV">
+                                        <rect key="frame" x="8" y="201" width="304" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-hm-Nna">
+                                        <rect key="frame" x="6" y="359" width="308" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkK-bo-tLs">
+                                <rect key="frame" x="16" y="446" width="132" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Zoom In">
+                                    <color key="titleColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="zoomIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FcG-gE-2M3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-jQ-qox">
+                                <rect key="frame" x="16" y="482" width="132" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="2nH-Cr-UZE"/>
+                                </constraints>
+                                <state key="normal" title="Zoom Out">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="zoomOut:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fr4-g3-kSC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8w4-hL-DPW">
+                                <rect key="frame" x="158" y="518" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="yyZ-a3-xuq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ova-bc-qPm">
+                                <rect key="frame" x="235" y="518" width="69" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEX-3t-xB6">
+                                <rect key="frame" x="158" y="446" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="LO1-qI-BgD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3lr-OF-KFH">
+                                <rect key="frame" x="158" y="482" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Vf9-Pg-8qQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ztp-IC-REc">
+                                <rect key="frame" x="14" y="417" width="292" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0HK-oY-0IE"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0e-hh-ZyE">
+                                <rect key="frame" x="16" y="518" width="132" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="dhH-UC-BoI"/>
+                                </constraints>
+                                <state key="normal" title="Scroll to offset">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scrollToOffset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xAC-z4-Gs9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="bottom" secondItem="8w4-hL-DPW" secondAttribute="bottom" id="7Ck-LW-UIC"/>
+                            <constraint firstItem="iDL-u9-yzq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="7SP-0k-o6n"/>
+                            <constraint firstItem="8w4-hL-DPW" firstAttribute="leading" secondItem="X0e-hh-ZyE" secondAttribute="trailing" constant="10" id="7q2-dk-zuy"/>
+                            <constraint firstItem="3lr-OF-KFH" firstAttribute="leading" secondItem="DUs-jQ-qox" secondAttribute="trailing" constant="10" id="9RR-rQ-mHL"/>
+                            <constraint firstItem="3lr-OF-KFH" firstAttribute="top" secondItem="Ztp-IC-REc" secondAttribute="bottom" constant="35" id="LHP-Am-coR"/>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="leading" secondItem="MkK-bo-tLs" secondAttribute="leading" id="QFK-hC-Nk4"/>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="trailing" secondItem="DUs-jQ-qox" secondAttribute="trailing" id="RRy-tu-RHR"/>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="top" secondItem="DUs-jQ-qox" secondAttribute="bottom" constant="6" id="SuQ-Bb-fx5"/>
+                            <constraint firstItem="Ztp-IC-REc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="TLN-7e-KiR"/>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="bottom" secondItem="ova-bc-qPm" secondAttribute="bottom" id="TsO-tg-BMd"/>
+                            <constraint firstItem="DUs-jQ-qox" firstAttribute="top" secondItem="MkK-bo-tLs" secondAttribute="bottom" constant="6" id="XaW-C4-JuY"/>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="trailing" secondItem="MkK-bo-tLs" secondAttribute="trailing" id="Y2M-PV-WXx"/>
+                            <constraint firstItem="IEX-3t-xB6" firstAttribute="leading" secondItem="MkK-bo-tLs" secondAttribute="trailing" constant="10" id="ahW-We-4UX"/>
+                            <constraint firstItem="Ztp-IC-REc" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cDK-qt-5XP"/>
+                            <constraint firstItem="DUs-jQ-qox" firstAttribute="bottom" secondItem="3lr-OF-KFH" secondAttribute="bottom" id="cMC-D4-y0d"/>
+                            <constraint firstItem="iDL-u9-yzq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="cpn-oa-29O"/>
+                            <constraint firstItem="IEX-3t-xB6" firstAttribute="bottom" secondItem="MkK-bo-tLs" secondAttribute="bottom" id="eHV-Lh-lgQ"/>
+                            <constraint firstItem="ova-bc-qPm" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="f60-HW-Bgt"/>
+                            <constraint firstItem="X0e-hh-ZyE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gur-Nh-L4r"/>
+                            <constraint firstAttribute="trailing" secondItem="iDL-u9-yzq" secondAttribute="trailing" id="oPh-2b-ByS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iDL-u9-yzq" secondAttribute="bottom" constant="150" id="oqs-Uo-JHN"/>
+                            <constraint firstItem="ova-bc-qPm" firstAttribute="leading" secondItem="8w4-hL-DPW" secondAttribute="trailing" constant="8" id="pjU-eq-v1e"/>
+                            <constraint firstItem="DUs-jQ-qox" firstAttribute="leading" secondItem="X0e-hh-ZyE" secondAttribute="leading" id="toV-zf-y1i"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="X0e-hh-ZyE" secondAttribute="bottom" constant="20" id="uOP-yq-9HL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="iDL-u9-yzq" id="Knq-az-6ik"/>
+                        <outlet property="xOffsetField" destination="8w4-hL-DPW" id="Bag-IR-T3O"/>
+                        <outlet property="yOffsetField" destination="ova-bc-qPm" id="CWj-Sr-w34"/>
+                        <outlet property="zoomInFactor" destination="IEX-3t-xB6" id="ASa-in-kyM"/>
+                        <outlet property="zoomOutFactor" destination="3lr-OF-KFH" id="gZk-RO-XeT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="403"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

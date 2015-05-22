@@ -1,7 +1,7 @@
 PODS:
   - Funcussion (0.1.1)
   - OCCalculator (0.0.3)
-  - PexKit (1.0.5)
+  - PexKit (1.0.6)
 
 DEPENDENCIES:
   - Funcussion (~> 0.1.1)
@@ -17,6 +17,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Funcussion: 76d4065e09324d81d8db5b7e23d4639dfeec4399
   OCCalculator: ea881bddbdcf7503ba2f2d0f261d5aeb18439b7e
-  PexKit: 4f8d30cfc2fe2e77bbaf951a333337c3ef9042f4
+  PexKit: 666af2a917c3bc38badb57c5ac6d8270e9213764
 
 COCOAPODS: 0.36.3

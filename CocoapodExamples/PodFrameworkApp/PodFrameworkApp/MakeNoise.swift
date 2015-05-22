@@ -14,7 +14,7 @@ import PexKit
 class Bronto : NSObject {
     class func doStuff() -> String {
         let barbo = DooBar(foo: "ember", bar: "coal")
-        let conf = PEXDns()
+//        let conf = PEXDns()
         return barbo.concat()
     }
 }
